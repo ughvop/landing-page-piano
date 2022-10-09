@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --charcoal: #363B49ff;
+    --silver-sand: #C6CBCFff;
+    --black: #000000ff;
+    --gunmetal: #2C2F38ff;
+    --cultured: #EBEFF0ff;
+  }
+
+  body {
+    background-color: var(--cultured);
+  }
+  
+  .center {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 80px;
+    background-color: var(--cultured);
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: 'BioRhyme', sans-serif;
+    font-weight: bold;
+  } 
+
+
+  li > a {
+    text-decoration: none;
+    color: var(--gunmetal);
+  }
+
+
+  li > a:hover {
+    background-color: var(--silver-sand);
+    border-radius: 7px;
+    padding: 0.5rem 1.3rem;
+  }
+
+  .logo {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+
+  form {
+    text-align: center;
+  }
+
+
+  label > p {
+    font-size: 3rem;
+    font-family: 'BioRhyme', sans-serif;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+  }
+
+  #email {
+    font-family: 'Trirong', sans-serif;
+    font-size: 1.4rem;
+    border: 2px solid var(--black);
+    padding-left: 1.5rem;
+    width: 80%;
+    height: 40px;
+    max-width: 700px;
+
+  }
+
+  #submit {
+    font-family: 'Trirong', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--silver-sand);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 50px;
+    min-width: 300px;
+    max-width: 100px;
+  }
+
+  .features > h2 {
+    font-size: 2.2rem;
+    font-family: 'BioRhyme', sans-serif;
+    color: var(--black);
+    margin-top: 3rem;
+  }
+
+  .features > p {
+    font-size: 1.4rem;
+    font-family: 'Trirong', sans-serif;
+    color: var(--gunmetal);
+  }
+
+
+  iframe {
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+ }
+
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  .cards {
+    width: 70%;
+    border: 1px solid var(--black);
+    padding-bottom: 2rem;
+    margin: 0.7rem;
+    text-align: center;
+
+  } 
+
+  .cards > h3 {
+    background-color: var(--silver-sand);
+    color: var(--gunmetal);
+    font-family: 'Trirong', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 70px;
+    padding-top: 0.5rem;
+  }
+
+  .cards > p {
+    font-family: 'Trirong', sans-serif;
+    color: var(--gunmetal);
+    font-size: 1.8rem;
+  }
+
+  .price {
+    color: var(--black);
+    font-family: 'BioRhyme', sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+
+  .cards > button {
+    all: unset;
+    background-color: var(--charcoal);
+    color: var(--silver-sand);
+    padding: 0.5rem 4rem;
+    font-family: 'Trirong', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+  footer {
+    background-color: var(--charcoal);
+    color: var(--silver-sand);
+    text-align: end;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+  }
+
+  footer > a {
+    font-size: 1.5rem;
+    font-family: 'Trirong', sans-serif;
+    text-decoration: none;
+    color: var(--cultured);
+  } 
+
+
+  @media  screen and (min-width: 992px) {
+
+    .cards-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .cards {
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    nav > ul {
+      width: 40vw;
+    }
+    
+  }
